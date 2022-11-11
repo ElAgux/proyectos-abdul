@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rectangulos</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <script>
+            class Rectangulo {
+                constructor(longitud, altura, area){
+                    this.longitud = longitud;
+                    this.altura = altura;
+                    this.area = area;
+                }
+                calcularArea(){
+                    this.area = this.longitud * this.altura;
+                }
+            }
+
+            const rectangulo1 = new Rectangulo(4,5,0)
+            const rectangulo2 = new Rectangulo(5,8,0)
+            rectangulo1.calcularArea();
+            rectangulo2.calcularArea();
+            document.write('area rectangulo 1: ' + rectangulo1.area + '<br>');
+            document.write('area rectangulo 2: ' + rectangulo2.area + '<br>');
+        </script>
+    </body>
+</html>
